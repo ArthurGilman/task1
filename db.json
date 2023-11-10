@@ -1,0 +1,5 @@
+[
+    {"product": "Печенье", "price": 34, "rating": 7},
+    {"product": "Яблоко", "price": 5, "rating": 3},
+    {"product": "Груша", "price": 10, "rating": 9}
+]
