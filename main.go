@@ -54,7 +54,8 @@ func GetDataFromCSV(filename string) (Data, Data, error) {
 		maxP Data
 		maxR Data
 	)
-	data := []Data{}
+	data := make([]Data, 0, 50)
+
 	file, err := os.Open(filename)
 	if err != nil {
 		return Data{}, Data{}, err
@@ -104,7 +105,7 @@ func GetDataFromJson(filename string) (Data, Data, error) {
 		maxP Data
 		maxR Data
 	)
-	data := []Data{}
+	data := make([]Data, 0, 50)
 	file, err := os.Open(filename)
 	if err != nil {
 		return Data{}, Data{}, err
